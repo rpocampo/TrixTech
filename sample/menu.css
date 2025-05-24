@@ -1,0 +1,185 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333; 
+    font-weight: bold;
+}
+
+nav .search-container {
+    margin-left: auto;
+}
+
+nav .search-container input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+nav .search-container button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #333; 
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+nav .search-container button:hover {
+    background-color: #555; 
+}
+
+
+.buy-now {
+    transition: color 0.3s, text-shadow 0.3s, border 0.3s; /* Smooth transition for border */
+    padding: 10px 20px; /* Add some padding for the border effect */
+    border: 2px solid transparent; /* Initial border to maintain layout */
+    border-radius: 5px; /* Optional: add rounded corners */
+  }
+  
+  .buy-now:hover {
+    color: white; /* Change to your desired hover color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional: add a shadow effect */
+    border: 2px solid grey; /* Border color on hover */
+    background-color:#4b4b4b; /* Optional: add a background color on hover */
+  }
+  
+
+
+.content {
+    padding-top: 80px;
+}
+.feature {
+    background-color: rgb(7, 93, 7);
+    
+}
+
+.flip-card {
+    perspective: 1000px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; 
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    transition: transform 1.0s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+    border-radius: 10px; 
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px; 
+  }
+  
+  .flip-card-front {
+    background-color: #fff;
+    color: #333;
+    border-radius: 10px; 
+  }
+  
+  .flip-card-back {
+    background-color: #fff;
+    color: #333;
+    transform: rotateY(180deg);
+    border-radius: 10px; 
+  }
+  
+  .testimonial-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+  }
+  
+  .whitebox {
+    position: center;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .testimonial-name {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .testimonial-quote {
+    font-size: 16px;
+    font-style: italic;
+    margin-bottom: 20px;
+  }
+  
+  .list-unstyled {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  .list-unstyled li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  .fas {
+    color: #ffc107;
+  }
+  #contact {
+    background-color: #f8f9fa;
+}
+#contact h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+#contact p {
+    color: #6c757d;
+    margin-bottom: 40px;
+}
+.form-control {
+    border-radius: 10px;
+}
+.btn-primary {
+    background-color: #cc6e2b;
+    border: none;
+    border-radius: 5px;
+}
+.btn-primary:hover {
+    background-color: #c65a1e;
+}
