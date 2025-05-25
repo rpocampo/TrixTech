@@ -1,37 +1,111 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <h1>Trixie's Event and Catering Services</h1>
-  </header>
+<head>
+  <meta charset="UTF-8">
+  <title>TRIXTECH</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: #fff;
+    }
 
-  <main class="main">
-    <div class="login-container">
+    .container {
+      text-align: center;
+    }
+
+    .brand {
+      font-size: 2.5rem;
+      font-weight: 600;
+      color: #FFD700;
+      margin-bottom: 2rem;
+    }
+
+    .login-box {
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 2rem 3rem;
+      border-radius: 12px;
+      box-shadow: 0 0 15px #FFD700;
+      width: 300px;
+      margin: auto;
+    }
+
+    .login-box h2 {
+      margin-bottom: 0.5rem;
+      color: #FFD700;
+    }
+
+    .login-box p {
+      font-size: 0.9rem;
+      margin-bottom: 1.5rem;
+    }
+
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 1rem;
+      border: 1px solid #FFD700;
+      border-radius: 8px;
+      background-color: #111;
+      color: #fff;
+    }
+
+    input[type="checkbox"] {
+      margin-right: 8px;
+    }
+
+    .login-box button {
+      background-color: #FFD700;
+      border: none;
+      padding: 10px 20px;
+      color: #000;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    .login-box button:hover {
+      background-color: #000;
+      border: 1px solid #FFD700;
+      color: #FFD700;
+    }
+
+    .login-box a {
+      display: block;
+      margin-top: 1rem;
+      color: #FFD700;
+      text-decoration: none;
+    }
+
+    .login-box a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="brand">TRIXTECH</div>
+    <div class="login-box">
       <h2>Login to Book Event</h2>
-      <p>sign in to continue booking your event</p>
-
+      <p>Sign in to continue booking your event</p>
       <form>
-        <label for="email">Email Address</label>
-        <input type="email" id="email" placeholder="Enter your email">
-
-        <label for="password">Password</label>
-        <input type="password" id="password" placeholder="Enter your password">
-
-        <div class="remember-me">
-          <input type="checkbox" id="remember">
-          <label for="remember">Remember me</label>
+        <input type="email" placeholder="Enter your email" required />
+        <input type="password" placeholder="Enter your password" required />
+        <div style="text-align: left; margin-bottom: 1rem;">
+          <label><input type="checkbox" /> Remember me</label>
         </div>
-
-        <a href="menu.html" class="button-link ">Sign In</a>
+        <a href="dashboard.html" button type="submit">Login</button>
+        <a href="dashboard.html">Sign In</a>
       </form>
-
-      
     </div>
-
+  </div>
 </body>
-</html>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
 </html>
